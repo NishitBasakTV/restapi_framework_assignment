@@ -1,0 +1,222 @@
+{
+	"info": {
+		"_postman_id": "b9e5ac96-228b-41f6-9cc7-a78a3171f43d",
+		"name": "dummyApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get all user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "app-id",
+						"value": "6260d6aef8a1115b12a7cfcd",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://dummyapi.io/data/v1/user",
+					"protocol": "https",
+					"host": [
+						"dummyapi",
+						"io"
+					],
+					"path": [
+						"data",
+						"v1",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user by id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "app-id",
+						"value": "6260d6aef8a1115b12a7cfcd",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://dummyapi.io/data/v1/user/6260deef0893782dcaedbc24",
+					"protocol": "https",
+					"host": [
+						"dummyapi",
+						"io"
+					],
+					"path": [
+						"data",
+						"v1",
+						"user",
+						"6260deef0893782dcaedbc24"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get post by id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "app-id",
+						"value": "6260d6aef8a1115b12a7cfcd",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://dummyapi.io/data/v1/post/6260ed5796ef5152c3ada8ed",
+					"protocol": "https",
+					"host": [
+						"dummyapi",
+						"io"
+					],
+					"path": [
+						"data",
+						"v1",
+						"post",
+						"6260ed5796ef5152c3ada8ed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get post by id Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "app-id",
+						"value": "6260d6aef8a1115b12a7cfcd",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://dummyapi.io/data/v1/user/6260f15b96ef515a51adaae7",
+					"protocol": "https",
+					"host": [
+						"dummyapi",
+						"io"
+					],
+					"path": [
+						"data",
+						"v1",
+						"user",
+						"6260f15b96ef515a51adaae7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete post by id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "app-id",
+						"value": "6260d6aef8a1115b12a7cfcd",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://dummyapi.io/data/v1/user/6260f15b96ef515a51adaae7",
+					"protocol": "https",
+					"host": [
+						"dummyapi",
+						"io"
+					],
+					"path": [
+						"data",
+						"v1",
+						"user",
+						"6260f15b96ef515a51adaae7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "app-id",
+						"value": "6260d6aef8a1115b12a7cfcd",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Tenali\",\n    \"lastName\": \"Ramakrishna\",\n    \"gender\": \"male\",\n    \"email\": \"tenali.ramakrishna@115ce.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dummyapi.io/data/v1/user/create",
+					"protocol": "https",
+					"host": [
+						"dummyapi",
+						"io"
+					],
+					"path": [
+						"data",
+						"v1",
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "app-id",
+						"value": "6260d6aef8a1115b12a7cfcd",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"owner\": \"6260deef0893782dcaedbc24\",\n    \"text\": \"This is a dummy blog\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dummyapi.io/data/v1/post/create",
+					"protocol": "https",
+					"host": [
+						"dummyapi",
+						"io"
+					],
+					"path": [
+						"data",
+						"v1",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
